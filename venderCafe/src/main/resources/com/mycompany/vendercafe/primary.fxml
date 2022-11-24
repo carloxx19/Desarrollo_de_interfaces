@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="699.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.vendercafe.PrimaryController">
+   <children>
+      <Text layoutX="64.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresar Saldo" wrappingWidth="86.80322265625" />
+      <TextField fx:id="txtIngresarSaldo" layoutX="27.0" layoutY="324.0" />
+      <Button fx:id="btnRecargar" layoutX="74.0" layoutY="379.0" mnemonicParsing="false" onAction="#agregarDinero" text="Recargar" />
+      <Text layoutX="27.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saldo Total" />
+      <TextField fx:id="txtSaldoTotal" editable="false" layoutX="99.0" layoutY="218.0" prefHeight="26.0" prefWidth="87.0" />
+      <RadioButton fx:id="capuccino" layoutX="245.0" layoutY="72.0" mnemonicParsing="false" text="Capuccino">
+         <toggleGroup>
+            <ToggleGroup fx:id="cafe" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="cortado" layoutX="245.0" layoutY="138.0" mnemonicParsing="false" text="Cortado" toggleGroup="$cafe" />
+      <RadioButton fx:id="cafeLatte" layoutX="245.0" layoutY="105.0" mnemonicParsing="false" text="Cafe Latte" toggleGroup="$cafe" />
+      <Text layoutX="414.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tamaño" wrappingWidth="61.2041015625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="268.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo" wrappingWidth="35.63623046875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="comboTamanio" layoutX="370.0" layoutY="77.0" prefWidth="150.0" />
+      <Text layoutX="579.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cantidad" wrappingWidth="66.5">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCantidad" layoutX="582.0" layoutY="77.0" prefHeight="26.0" prefWidth="61.0" />
+      <Button fx:id="btnRealizarPedido" layoutX="370.0" layoutY="127.0" mnemonicParsing="false" onAction="#realizar_pedido" prefHeight="57.0" prefWidth="273.0" text="Realizar Pedido" />
+      <Button fx:id="eliminar" layoutX="528.0" layoutY="392.0" mnemonicParsing="false" text="Eliminar" />
+      <TableView fx:id="areaPedidos" layoutX="247.0" layoutY="220.0" prefHeight="154.0" prefWidth="388.0">
+        <columns>
+          <TableColumn fx:id="nombreCafe" prefWidth="93.0" text="Nombre" />
+          <TableColumn fx:id="tamanioCafe" prefWidth="76.0" text="Tamaño" />
+            <TableColumn fx:id="cantidadcafe" prefWidth="61.0" text="Cantidad" />
+            <TableColumn fx:id="precioCafe" prefWidth="81.0" text="Precio" />
+            <TableColumn fx:id="totalCafe" prefWidth="75.0" text="total" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="177.0" fitWidth="214.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coffee-talk-logo-design-vector-coffee-cup-chat-speech-bubble-icon_445285-482.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
