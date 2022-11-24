@@ -1,0 +1,19 @@
+#panel{
+    -fx-background-color:#313131;
+}
+
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color:fuchsia;
+    -fx-text-fill: yellowgreen;
+}
+
+.table-view:row-selection .table-row-cell:filled:selected {
+    -fx-background-color:fuchsia;
+    -fx-text-fill: red;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: gainsboro;
+    -fx-text-fill: red;
+    -fx-text-fill: #52677A;
+}

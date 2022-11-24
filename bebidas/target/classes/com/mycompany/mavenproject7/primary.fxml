@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="panel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" 
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1426.0" 
+            stylesheets="@Estilos.css" xmlns="http://javafx.com/javafx/18" 
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject7.PrimaryController">
+    <children>
+        <ComboBox fx:id="categorias" layoutX="712.0" layoutY="131.0" onAction="#mostrar_contenido_categoria" prefHeight="30.0" prefWidth="272.0" />
+      <Text fill="WHITE" layoutX="401.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="buscador de Cock-teles" textAlignment="CENTER">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="401.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FILTRAR POR CATEGORIA: ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="401.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BUSCAR POR NOMBRE:" wrappingWidth="266.1710820194154">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Text>
+      <TextField fx:id="introducir_busqueda" layoutX="678.0" layoutY="237.0" onKeyPressed="#buscar_nombre" onKeyTyped="#buscar_nombre" prefHeight="26.0" prefWidth="306.0" />
+      <TableView fx:id="tabla_contenido" layoutX="399.0" layoutY="358.0" onMouseClicked="#mostar_imagen" prefHeight="341.0" prefWidth="633.0">
+        <columns>
+          <TableColumn fx:id="idCombo" editable="false" prefWidth="280.0" sortable="false" text="ID" />
+          <TableColumn fx:id="nombreCombo" prefWidth="352.0" text="Nombre" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="397.0" fitWidth="450.0" layoutX="4.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/coctel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagen_bebida" fitHeight="320.0" fitWidth="333.0" layoutX="1064.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
