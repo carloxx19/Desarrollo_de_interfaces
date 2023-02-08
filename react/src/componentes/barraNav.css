@@ -1,0 +1,139 @@
+header {
+    background: rgb(177, 101, 153);
+    background: linear-gradient(85deg, rgba(177, 101, 153, 1) 0%, rgba(255, 2, 173, 1) 100%);
+    width: 100%;
+    padding-bottom: 4px;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+#contenido {
+    text-align: center;
+    background: rgb(204, 30, 106);
+    background: linear-gradient(85deg, rgba(204, 30, 106, 1) 0%, rgba(154, 70, 228, 1) 100%);
+    padding-bottom: 40px;
+}
+
+.Fondo1 {
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(to right, white, black) 1;
+}
+
+.Fondo1:hover {
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(to right, black, white) 1;
+}
+
+.Footer {
+    background: rgb(177, 101, 153);
+    background: linear-gradient(85deg, rgba(177, 101, 153, 1) 0%, rgba(255, 2, 173, 1) 100%);
+    width: 100%;
+    padding-bottom: 4px;
+    text-align: center;
+    color: white;
+    border-top: 5px solid black;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+
+.Contenido h3 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.Contenido img {
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    border: 10px solid #00fee0;
+}
+
+.Contenido img:hover {
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    border: 10px solid #7af69a;
+}
+
+.Tarjeta {
+    display: block;
+    margin: auto;
+    width: 400px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blueviolet;
+    padding-bottom: 10px;
+}
+
+.Columna {
+    float: left;
+    width: 33%;
+    padding-right: 5px;
+    padding: 30px;
+}
+
+.Fila:after {
+    box-sizing: border-box;
+    content: "";
+    clear: both;
+}
+
+.Fila:after {
+    box-sizing: border-box;
+    content: "";
+    clear: both;
+}
+
+#contenido2 {
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+.Contenido button {
+    display: block;
+    margin: auto;
+    background-color: red;
+    font-size: 15px;
+    padding: 4px;
+    padding-bottom: 20px;
+    width: 40%;
+
+}
+
+.Contenido boton {
+    display: block;
+    margin: auto;
+    background-color: #7af69a;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.Favorito img {
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    border: 10px solid #00fee0;
+}
+
+.Favorito img:hover {
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    border: 10px solid #7af69a;
+}
+
+.Favorito h3 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+
